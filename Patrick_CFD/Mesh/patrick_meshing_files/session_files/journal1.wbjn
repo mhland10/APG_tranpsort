@@ -1,0 +1,53 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+Save(Overwrite=True)
+template1 = GetTemplate(TemplateName="Geometry")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometryProperties1 = geometry1.GetGeometryProperties()
+geometryProperties1.GeometryImportAnalysisType = "AnalysisType_2D"
+geometry1.SetFile(FilePath="C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/CFD Geometry - 2D Test Section Geometry.step")
+template2 = GetTemplate(TemplateName="Mechanical APDL")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+componentTemplate1 = GetComponentTemplate(Name="ANSYSSetupCellTemplate")
+system2 = template2.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=geometryComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    RelativeTo=system1)
+system2.Delete()
+template3 = GetTemplate(TemplateName="FLUENT")
+componentTemplate2 = GetComponentTemplate(Name="FluentSetupCellTemplate")
+system3 = template3.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=geometryComponent1, TransferName=None, ToComponentTemplate=componentTemplate2)],
+    RelativeTo=system1)
+system3.Delete()
+template4 = GetTemplate(TemplateName="Fluid Flow")
+system4 = template4.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+template5 = GetTemplate(TemplateName="Mesh")
+system5 = template5.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system1)
+system4.Delete()
+system5.DisplayText = "Case 0 Mesh"
+meshComponent1 = system5.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+meshComponent1.UpdateUpstreamComponents()
+geometry1.Edit()
+geometry1.Exit()
+meshComponent1.UpdateUpstreamComponents()
+meshComponent1.Refresh()
+system5.Delete()
+system6 = template5.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system1)
+system6.Delete()
+template6 = GetTemplate(TemplateName="FLTG")
+componentTemplate3 = GetComponentTemplate(Name="FluentTGridCellTemplate")
+system7 = template6.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=geometryComponent1, TransferName=None, ToComponentTemplate=componentTemplate3)],
+    RelativeTo=system1)
+Save(Overwrite=True)
