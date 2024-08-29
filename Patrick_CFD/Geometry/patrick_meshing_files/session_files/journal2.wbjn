@@ -1,0 +1,15 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(TemplateName="Geometry")
+system1 = GetSystem(Name="Geom")
+system2 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometryProperties1 = geometry1.GetGeometryProperties()
+geometryProperties1.GeometryImportAnalysisType = "AnalysisType_2D"
+geometry1.SetFile(FilePath="C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/CFD Geometry - 2D Inlet Section Geometry.step")
+geometry1.Edit()
+geometry1.Exit()
+Save(Overwrite=True)
