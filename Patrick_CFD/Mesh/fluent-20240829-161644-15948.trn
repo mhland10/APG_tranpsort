@@ -1,0 +1,268 @@
+Auto-Transcript Start Time:  16:16:44, 29 Aug 2024 Central Daylight Time 
+Current Directory: "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Mesh"
+
+              Welcome to ANSYS Fluent 2024 R2
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 13 2024 11:21:01 EST  Build Id: 10192  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-1N5CMU3" (win64).
+
+----------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                           
+----------------------------------------------------------------------------------
+n3    DESKTOP-1N5CMU3  4/6  Windows-x64  6136   Intel(R) Core(TM) i5-9600KF      
+n2    DESKTOP-1N5CMU3  3/6  Windows-x64  22736  Intel(R) Core(TM) i5-9600KF      
+n1    DESKTOP-1N5CMU3  2/6  Windows-x64  21380  Intel(R) Core(TM) i5-9600KF      
+n0*   DESKTOP-1N5CMU3  1/6  Windows-x64  17980  Intel(R) Core(TM) i5-9600KF      
+host  DESKTOP-1N5CMU3       Windows-x64  25076  Intel(R) Core(TM) i5-9600KF      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\cleanup-fluent-DESKTOP-1N5CMU3-25076.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+writing cad import logs to "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\\cadImport1724966239.log"
+    loading data from 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/2D_inletsection.fmd' ...
+    configured ACIS facet options:
+        SurfaceTolerance = 0.00075 m
+        NormalTolerance = 8 deg
+        RelativeMaxEdgeLengthFactor = 0.02
+    
+    configured ACIS using multithreaded faceter: True
+    using precision (SPAresabs, SPAresnor, SPAresfit, SPAresmch) = (1e-08, 1e-10, 1e-05, 9.999999999999999e-12)
+    faceting 1 body ...
+    faceting entities done in 0.0061284 [s]
+    processing 18 zones ...
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\initial.pmdat
+Done
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+(cx-use-window-id 51)
+zone not found.
+
+---------------- A local max size of 0.00032 was added to wall-tripbar
+
+---- Warning--- Disabling 'Project On Geometry', as its currently not supported with 'Enable Multi Threading'
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+Done
+Computing size field ...
+Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Processing volumetric soft size function 1
+Specified entity type is not supported yet.Processing volumetric curvature size function 2
+Specified entity type is not supported yet.Processing volumetric curvature size function 3
+Specified entity type is not supported yet.Processing volumetric proximity size function 4
+Successfully activated the size field with ID 1
+size field computation is done in 1 sec.
+writing size field ...
+
+done.
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 25 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      54   zone2d_inlet_section_geometry                fluid   629130       77   629053
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     0          0.085593112     629130
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  3.78 minutes
+
+Reading C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+reading mesh C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Geometry\\FM_DESKTOP-1N5CMU3_15948\\TaskObject7.pmdat ...
+done.
+Reading projection method (1) from file was successful!
+generating pointers...done.
+extracting boundary entities...
+ 684 boundary nodes.
+ 857 boundary faces.
+ 1 boundary face zones.
+done.
+reading size field...
+Successfully activated the size field with ID 1
+ Read 1920554 vertices
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+Done
+
+---------------- The Global Min size was adjusted to 1.89e-05 
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 26 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      56   zone2d_inlet_section_geometry                fluid   629130       77   629053
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     0          0.085593112     629130
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  3.60 minutes
+
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "case2.msh.gz") "Legacy Compressed Mesh Files (*.msh.gz )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "| gzip -2cfv > C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2.msh.gz"...
+Writing temporary file C:\\Users\\mtthl\\AppData\\Local\\Temp\\flntgz-250762 ...
+Done.
+
+Copying the required intermediate mesh files into C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\case2_workflow_files
+Done.
+    saving data to 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2_workflow_files\\case2.fmd' ...
+    done.
+Writing "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2.msh.h5" ...
+writing 1 node zones
+writing 7 face zones 
+writing 1 cell zones 
+done.
+---------------- A 2D mesh was written to C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2.msh.h5
+Reading C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+reading mesh C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Geometry\\FM_DESKTOP-1N5CMU3_15948\\TaskObject7.pmdat ...
+done.
+Reading projection method (1) from file was successful!
+generating pointers...done.
+extracting boundary entities...
+ 684 boundary nodes.
+ 857 boundary faces.
+ 1 boundary face zones.
+done.
+reading size field...
+Successfully activated the size field with ID 1
+ Read 1920554 vertices
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+Done
+
+---------------- The Global Min size was adjusted to 1.89e-05 
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 28 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      56   zone2d_inlet_section_geometry                fluid   631510      175   631335
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     4          0.049321227     631510
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  3.73 minutes
+
+(cx-use-window-id 51)
+zone id: 56, name: zone2d_inlet_section_geometry, type: wall, count: 631510
+(cx-use-window-id 51)
+zone not found.
+Reading C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+reading mesh C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Geometry\\FM_DESKTOP-1N5CMU3_15948\\TaskObject7.pmdat ...
+done.
+Reading projection method (1) from file was successful!
+generating pointers...done.
+extracting boundary entities...
+ 684 boundary nodes.
+ 857 boundary faces.
+ 1 boundary face zones.
+done.
+reading size field...
+Successfully activated the size field with ID 1
+ Read 1920554 vertices
+Deleting controls...
+done
+
+---------------- A local max size of 0.00032 was added to wall-tripbar
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_15948\TaskObject7.pmdat
+Done
+Computing size field ...
+Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Processing volumetric soft size function 2
+Specified entity type is not supported yet.Processing volumetric curvature size function 3
+Specified entity type is not supported yet.Processing volumetric curvature size function 4
+Specified entity type is not supported yet.Processing volumetric proximity size function 5
+Successfully activated the size field with ID 2
+size field computation is done in 2 sec.
+writing size field ...
+
+done.
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 27 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      56   zone2d_inlet_section_geometry                fluid   631510      175   631335
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     4          0.049321227     631510
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  3.72 minutes
+
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "case3") "Legacy Compressed Mesh Files (*.msh.gz )")
+Writing "| gzip -2cfv > C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3.msh.gz"...
+Writing temporary file C:\\Users\\mtthl\\AppData\\Local\\Temp\\flntgz-250763 ...
+Done.
+
+Copying the required intermediate mesh files into C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\case3_workflow_files
+Done.
+    saving data to 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3_workflow_files\\case3.fmd' ...
+    done.
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  16:52:50, 29 Aug 2024 Central Daylight Time 
+Total Transcript Time: 36 Minute 6 Second.

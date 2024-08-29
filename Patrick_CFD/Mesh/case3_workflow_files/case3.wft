@@ -1,0 +1,248 @@
+{
+    "workflow": {
+        "version": "24.2",
+        "ROOT": {
+            "TaskObject:TaskObject1": {
+                "Arguments": {
+                    "FileName": "C:\/Users\/mtthl\/OneDrive\/Documents\/Education\/Masters Thesis\/git\/APG_tranpsort\/Patrick_CFD\/Geometry\/2D_inletsection.agdb",
+                    "LengthUnit": "m",
+                    "NumParts": "1"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "LoadCADGeometry",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Load CAD Geometry"
+            },
+            "TaskObject:TaskObject2": {
+                "Arguments": "",
+                "CheckPoint": "default-off",
+                "CommandName": "UpdateRegions",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Update Regions"
+            },
+            "TaskObject:TaskObject3": {
+                "Arguments": {
+                    "BoundaryLabelList": [
+                        "inlet"
+                    ],
+                    "BoundaryLabelTypeList": [
+                        "mass-flow-inlet"
+                    ],
+                    "OldBoundaryLabelList": [
+                        "inlet"
+                    ],
+                    "OldBoundaryLabelTypeList": [
+                        "pressure-inlet"
+                    ]
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "UpdateBoundaries",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Update Boundaries"
+            },
+            "TaskObject:TaskObject4": {
+                "Arguments": {
+                    "MaxSize": "0.001",
+                    "MinSize": "1.0699999999999999e-05",
+                    "PrimeSizeControlIds": [
+                        "5",
+                        "4",
+                        "3"
+                    ]
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "DefineGlobalSizing",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Define Global Sizing"
+            },
+            "TaskObject:TaskObject5": {
+                "Arguments": {
+                    "AddChild": "yes"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject9"
+                ],
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Add Local Sizing"
+            },
+            "TaskObject:TaskObject6": {
+                "Arguments": {
+                    "AddChild": "yes"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "Add2DBoundaryLayers",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject10",
+                    "TaskObject11"
+                ],
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Add 2D Boundary Layers"
+            },
+            "TaskObject:TaskObject7": {
+                "Arguments": {
+                    "EnableMultiThreading": "true",
+                    "GenerateQuads": "true",
+                    "ProjectOnGeometry": "false"
+                },
+                "CheckPoint": "default-on",
+                "CommandName": "GenerateInitialSurfaceMesh",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Generate the Surface Mesh"
+            },
+            "TaskObject:TaskObject8": {
+                "Arguments": {
+                    "FileName": "C:\/Users\/mtthl\/OneDrive\/Documents\/Education\/Masters Thesis\/git\/APG_tranpsort\/Patrick_CFD\/Mesh\/case2.msh.h5"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "Write2dMesh",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Export Fluent 2D Mesh"
+            },
+            "TaskObject:TaskObject9": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BOICellsPerGap": "1",
+                    "BOIControlName": "edgesize_1",
+                    "BOICurvatureNormalAngle": "18",
+                    "BOIExecution": "Edge Size",
+                    "BOIGrowthRate": "1.2",
+                    "BOISize": "0.00032000000000000003",
+                    "BOIZoneorLabel": "label",
+                    "CompleteEdgeLabelList": [
+                        "wall-tripbar"
+                    ],
+                    "DrawSizeControl": "true",
+                    "EdgeLabelList": [
+                        "wall-tripbar"
+                    ],
+                    "PrimeSizeControlId": "2"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "edgesize_1"
+            },
+            "TaskObject:TaskObject10": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BLControlName": "uniform_1",
+                    "EdgeLabelList": [
+                        "wall-developing",
+                        "wall-leading",
+                        "wall-tripbar"
+                    ],
+                    "FirstLayerHeight": "1.0699999999999999e-06",
+                    "GrowOn": "selected-labels",
+                    "MaxLayerHeight": "0.012",
+                    "NumberOfLayers": "25"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "Add2DBoundaryLayers",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "uniform_1"
+            },
+            "TaskObject:TaskObject11": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BLControlName": "uniform_2",
+                    "FirstLayerHeight": "1.0699999999999999e-06",
+                    "MaxLayerHeight": "0.0095999999999999992",
+                    "NumberOfLayers": "10"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "Add2DBoundaryLayers",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "uniform_2"
+            },
+            "Workflow": {
+                "CurrentTask": "TaskObject7",
+                "TaskList": [
+                    "TaskObject1",
+                    "TaskObject2",
+                    "TaskObject3",
+                    "TaskObject4",
+                    "TaskObject5",
+                    "TaskObject6",
+                    "TaskObject7",
+                    "TaskObject8"
+                ],
+                "WorkflowType": "2D Meshing"
+            }
+        }
+    },
+    "meshing": {
+        "version": "24.2",
+        "ROOT": {
+            "GlobalSettings": {
+                "AreaUnit": "m^2",
+                "EnableCleanCAD": "false",
+                "EnableComplexMeshing": "false",
+                "EnablePrime2dMeshing": "true",
+                "EnablePrimeMeshing": "true",
+                "InitialVersion": "24.2",
+                "LengthUnit": "m",
+                "NormalMode": "false",
+                "UseAllowedValues": "false",
+                "VolumeUnit": "m^3"
+            }
+        }
+    },
+    "PartManagement": {
+        "version": "24.2",
+        "ROOT": {
+            "GlobalSettings": {
+                "LengthUnit": "m"
+            },
+            "Node:Node1": {
+                "Name": "Meshing Model",
+                "_name_": "Meshing Model"
+            }
+        }
+    }
+}
