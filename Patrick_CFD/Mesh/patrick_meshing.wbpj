@@ -2,16 +2,17 @@
 <Storage>
   <Project Version="24.2.1.0">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">2956</timestamp-max>
+    <timestamp-max valType="Int64">3282</timestamp-max>
     <framework-build-version valType="String">24.2.133.0</framework-build-version>
     <external-version-string valType="String">2024 R2</external-version-string>
-    <last-saved-utc valType="String">08/30/2024 01:41:26</last-saved-utc>
+    <last-saved-utc valType="String">08/30/2024 15:34:02</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">mtthl@DESKTOP-1N5CMU3:C:\Users\mtthl\AppData\Local\Temp\WorkbenchLogs\CoreEvents32408.log</ArrayEntry>
       <ArrayEntry Index="1">mtthl@DESKTOP-1N5CMU3:C:\Users\mtthl\AppData\Local\Temp\WorkbenchLogs\CoreEvents15608.log</ArrayEntry>
       <ArrayEntry Index="2">mtthl@DESKTOP-1N5CMU3:C:\Users\mtthl\AppData\Local\Temp\WorkbenchLogs\CoreEvents8716.log</ArrayEntry>
       <ArrayEntry Index="3">mtthl@DESKTOP-1N5CMU3:C:\Users\mtthl\AppData\Local\Temp\WorkbenchLogs\CoreEvents24864.log</ArrayEntry>
+      <ArrayEntry Index="4">mtthl@DESKTOP-1N5CMU3:C:\Users\mtthl\AppData\Local\Temp\WorkbenchLogs\CoreEvents5384.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -60,7 +61,25 @@
 "bc8194b7-1e60-4b70-983a-4f34af8c3b55": "/Schematic/ComponentTemplate:CFDPostTemplate",
 "504eff9c-3fb4-43f6-b474-83a3593019dc": "/Schematic/System:FFF 1",
 "f022f9e6-6608-4869-8d37-af3dfd1351c7": "/FileContainer/FileReference:F12",
-"8c58b8c9-ce7e-4d9f-8d10-c9487ce92bb1": "/FileTypesContainer/FileType:StandardMeshFileType"
+"8c58b8c9-ce7e-4d9f-8d10-c9487ce92bb1": "/FileTypesContainer/FileType:StandardMeshFileType",
+"3e3e8ba6-686b-4f2c-80a1-a75d9177264f": "/FileContainer/FileReference:F13",
+"5170e21b-de8d-4250-941f-02a3cc5c81ef": "/FileContainer/FileReference:F14",
+"67734da7-8a27-43bd-a90d-0b83e288a5c4": "/FileContainer/FileReference:F15",
+"fed78d47-1adc-448e-80b9-615623d312d4": "/FileTypesContainer/FileType:Imported FLUENT Mesh File Type",
+"eb3238ab-f0d9-4b47-8817-8bd45a666e4b": "/Schematic/System:SYS",
+"cbcc7f38-17b7-4c17-bfd5-0ae637dab2e2": "/Schematic/Component:Imported Mesh",
+"b2cbedee-b533-484e-af83-2fdd6aca5d7e": "/Schematic/Template:Mesh",
+"289457f8-a4f0-4fba-9d54-6038002ecf4d": "/Schematic/System:FLU",
+"c31ecf82-dd83-499c-beff-1c202bc9a690": "/Schematic/System:CFX",
+"1de56f2c-e1c8-4c2d-b49a-77160617ffe1": "/Schematic/Component:Setup 2",
+"e14faf36-0176-4720-86ab-1c2b5a5ef5c5": "/Schematic/Component:Solution 2",
+"32503d00-0709-4096-8477-3eb2930ff48c": "/Schematic/Template:FLUENT",
+"b1540916-4f20-429e-b389-50bd810040a0": "/Schematic/Component:Setup 3",
+"81df370e-b60e-4276-9463-1fd4e8c32579": "/Schematic/Component:Solution 3",
+"56b4d8e3-030e-4c0c-9145-d72c037d8384": "/Schematic/Component:Results 2",
+"98b4b815-91b1-4607-95f1-b15b9cd31be1": "/Schematic/Template:CFX",
+"d5959b85-5db5-4ec2-8330-758f15275a8c": "/Schematic/ComponentTemplate:CFXPhysicsTemplate",
+"f04eb549-b4ab-4ddf-b757-d86e2f71688d": "/Schematic/ComponentTemplate:CFXResultsTemplate"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -84,7 +103,22 @@
 "cca8223c-7b52-4c3f-bc44-6392dfe22bb7": "/Setup 1/SetupData:SetupData",
 "90ddd676-e950-497b-be64-c4867c0f4a2b": "/Solution 1/FluentSolution:SolutionDataProvider",
 "76341985-9c1b-4c44-9718-359fcb83e06b": "/Results 1/SolutionDataLink:SolutionDataProvider",
-"22df2b0b-b76d-4bfb-9f25-c60c81852af3": "/Results 1/CFDResults:Results 1 Source"
+"22df2b0b-b76d-4bfb-9f25-c60c81852af3": "/Results 1/CFDResults:Results 1 Source",
+"c5b4007a-f321-4094-bde3-41f9b3e98f43": "/Imported Mesh/MeshingMesh:MeshingMeshDataObject",
+"c8e3e524-1b73-498c-9a98-65c7fad0ba8c": "/Solution 2/FluentSolutionProperties:SolutionData",
+"34d7c195-d2e3-4930-9c52-6ee742140860": "/Imported Mesh/MechanicalMeshFile:FluentMesh",
+"8abadb61-54b5-49ae-910a-5f05bc7539bf": "/Imported Mesh/MechanicalMeshFile:CMDBMesh",
+"ffc409ac-c3ff-473d-b299-3a7a702a167e": "/Imported Mesh/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider",
+"e54bf37d-31b7-4834-b258-afa9420d6614": "/Imported Mesh/GeneratedMeshOutputForAQWAModelProvider:GeneratedMeshOutputForAQWAModelProvider",
+"76c3aab1-00af-42e8-a73b-80aee0380812": "/Setup 2/SetupData:SetupData",
+"14d366fd-c242-4f71-833f-1e064af6be58": "/Setup 3/CFXMeshDataLink:MeshingMeshDataObject",
+"638e7efb-5cc1-4f16-a78e-9f96981cbdba": "/Setup 3/CFXSetupProperties:Setup 3 Source",
+"0c23bada-2179-4fae-a469-3e7cc26ab09d": "/Setup 3/CFXSetup:Setup 3 Provider",
+"379440a7-cfb3-4891-a6c7-ad4efec4e6c9": "/Solution 3/CFXSetupDataLink:Setup 3 Provider",
+"7290fac3-e5ae-4e70-b588-500ae60156e1": "/Solution 3/CFXSolutionProperties:Solution 3 Source",
+"b500e141-8551-4cf8-a9bb-be026700b94b": "/Solution 3/CFXSolution:Solution 3 Provider",
+"6f264961-dfc2-4e96-90cb-00902bfa184f": "/Results 2/SolutionDataLink:Solution 3 Provider",
+"7af58c84-01fc-45d7-aa8f-93079647ab58": "/Results 2/CFDResults:Results 2 Source"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -116,7 +150,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2951, "Input": 1474, "Output": 1474}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3277, "Input": 1474, "Output": 1474}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/FileContainer/FileReference:F1" Version="1.0">
@@ -127,7 +161,7 @@
       <Object Name="/FileContainer/FileReference:F2" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F2</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$31497db6-4a47-46be-94c8-faca467a0b1e, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 6}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$31497db6-4a47-46be-94c8-faca467a0b1e, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 7}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -164,13 +198,28 @@
         <object-name valType="String">F12</object-name>
         <member-data valType="String">{"DisplayText": "FFF-1.mshdb.acmo", "FileType": $$8c58b8c9-ce7e-4d9f-8d10-c9487ce92bb1, "DependentFiles": [], "ContainerAssociations": ["Mesh 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\FFF-1.mshdb.acmo", "ReferenceCount": 1}</member-data>
       </Object>
+      <Object Name="/FileContainer/FileReference:F13" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F13</object-name>
+        <member-data valType="String">{"DisplayText": "case2.msh.gz", "FileType": $$fed78d47-1adc-448e-80b9-615623d312d4, "DependentFiles": [], "ContainerAssociations": ["Imported Mesh", "Setup 2"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Mesh\case2.msh.gz", "ReferenceCount": 4}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F14" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F14</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.mshdb", "FileType": $$3fbd4386-3209-413a-bdb5-5be5fcf9fa55, "DependentFiles": [], "ContainerAssociations": ["Imported Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS.mshdb", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F15" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F15</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.mshdb.acmo", "FileType": $$8c58b8c9-ce7e-4d9f-8d10-c9487ce92bb1, "DependentFiles": [], "ContainerAssociations": ["Imported Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS.mshdb.acmo", "ReferenceCount": 1}</member-data>
+      </Object>
     </Container>
     <Container Name="Messages" Version="1.0">
       <container-type valType="String">Project:Messages</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2872, "Input": 1475, "Output": 1475}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3274, "Input": 1475, "Output": 1475}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/Messages/StoredMessage:Message" Version="1.0">
@@ -288,6 +337,38 @@ CommandName: SetEntityProperty(Entity=\"/Mesh 1/MeshProperties:MeshProperties\",
    at Ansys.UI.Views.TableView.&lt;&gt;c__DisplayClass169_0.&lt;AfterCellEdit&gt;b__0()
 """, "Association": "", "DateTimeStamp": 08/29/2024 19:54:10, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
       </Object>
+      <Object Name="/Messages/StoredMessage:Message 10" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 10</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """Ansys.Fluent.Cortex.CortexCommandFailedException: An error occured in FLUENT while applying case and settings informatins.
+An error occured in FLUENT while applying case and settings informatins.
+   at Ansys.Fluent.Cortex.CortexCommunicator.SendMessage(String msg, String msgKey, String errorMessage, Boolean waitForReply)
+   at Ansys.Fluent.FluentCommunicator.UpdateSetupInfo(Dictionary`2 info)
+   at Ansys.Fluent.Data.SetupData.ReadCaseModelInfo(IFullContext context)""", "Details": None, "Association": "", "DateTimeStamp": 08/30/2024 10:30:29, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 11" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 11</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """There was a problem importing the mesh from the requested file.
+The importing process reported the following problem:
+
+  Unable to import mesh: Premmature End-Of-File found""", "Details": None, "Association": "", "DateTimeStamp": 08/30/2024 10:31:08, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 12" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 12</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "An error occured initializing CFX-Pre: Application error(s) occurred in CFX-Pre.  Please see the messages view for further details.", "Details": None, "Association": "", "DateTimeStamp": 08/30/2024 10:31:08, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 13" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 13</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "This transfer is not valid. Expected Mesh Type : 'AnsysMesh'. Imported Mesh File Type : 'Imported FLUENT Mesh File Type'.", "Details": None, "Association": "", "DateTimeStamp": 08/30/2024 10:31:52, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 14" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 14</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "This transfer is not valid. Expected Mesh Type : 'AnsysMesh'. Imported Mesh File Type : 'Imported FLUENT Mesh File Type'.", "Details": None, "Association": "", "DateTimeStamp": 08/30/2024 10:32:04, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -318,7 +399,7 @@ CommandName: SetEntityProperty(Entity=\"/Mesh 1/MeshProperties:MeshProperties\",
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2852, "Input": 2805, "Output": 1481}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3272, "Input": 3273, "Output": 1481}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:Geom" Version="1.0">
@@ -334,7 +415,22 @@ CommandName: SetEntityProperty(Entity=\"/Mesh 1/MeshProperties:MeshProperties\",
       <Object Name="/Schematic/System:FFF 1" Version="1.0">
         <class-type valType="String">System</class-type>
         <object-name valType="String">FFF 1</object-name>
-        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent)", "Components": [$$edf7831a-fd57-4512-b75e-94df3929b747, $$544de9d0-5347-4bdc-8938-640150ff61ef, $$7ebadd3c-ef41-46c5-8947-004db2a4054a, $$826a4637-ffd2-47f7-913d-936365014a2d, $$50ba306c-eda0-4c05-a6b5-d6b804b1996f], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$7ebadd3c-ef41-46c5-8947-004db2a4054a, $$826a4637-ffd2-47f7-913d-936365014a2d], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsTypeDisplayString": "Fluids", "Start from available data": "True", "SolverTypeDisplayString": "FLUENT", "IsCreated": "True", "VOLATILE:SystemName": "FFF 1"}, "SystemType": "Fluid Flow (FLUENT)", "HeaderText": "Fluid Flow (Fluent)", "SystemTypeAbbreviation": "FFF", "UniqueSystemDirectoryName": "FFF-1", "Physics": ["Fluids"], "AnalysisType": None, "SystemHelpId": "wb2sb_ffFLUENT", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$aa99be97-fdb7-4a17-9fca-bbda2a04e4d9, "Notes": None, "LayoutChildren": [], "LayoutIndex": 2}</member-data>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent)", "Components": [$$edf7831a-fd57-4512-b75e-94df3929b747, $$544de9d0-5347-4bdc-8938-640150ff61ef, $$7ebadd3c-ef41-46c5-8947-004db2a4054a, $$826a4637-ffd2-47f7-913d-936365014a2d, $$50ba306c-eda0-4c05-a6b5-d6b804b1996f], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$7ebadd3c-ef41-46c5-8947-004db2a4054a, $$826a4637-ffd2-47f7-913d-936365014a2d], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsTypeDisplayString": "Fluids", "Start from available data": "True", "SolverTypeDisplayString": "FLUENT", "IsCreated": "True", "VOLATILE:SystemName": "FFF 1"}, "SystemType": "Fluid Flow (FLUENT)", "HeaderText": "Fluid Flow (Fluent)", "SystemTypeAbbreviation": "FFF", "UniqueSystemDirectoryName": "FFF-1", "Physics": ["Fluids"], "AnalysisType": None, "SystemHelpId": "wb2sb_ffFLUENT", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$aa99be97-fdb7-4a17-9fca-bbda2a04e4d9, "Notes": None, "LayoutChildren": [$$eb3238ab-f0d9-4b47-8817-8bd45a666e4b], "LayoutIndex": 2}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:SYS" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">SYS</object-name>
+        <member-data valType="String">{"DisplayText": "Mesh", "Components": [$$cbcc7f38-17b7-4c17-bfd5-0ae637dab2e2], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$cbcc7f38-17b7-4c17-bfd5-0ae637dab2e2], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "ImportedFluids", "AnalysisType": "Any", "SolverType": "Any", "SolverTypeDisplayString": "Any", "PhysicsTypeDisplayString": "Any", "AnalysisTypeDisplayString": "Any", "SystemName": "Mesh", "IsCreated": "True", "VOLATILE:SystemName": "SYS"}, "SystemType": "Mesh", "HeaderText": "Mesh", "SystemTypeAbbreviation": "SYS", "UniqueSystemDirectoryName": "SYS", "Physics": [], "AnalysisType": None, "SystemHelpId": None, "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$b2cbedee-b533-484e-af83-2fdd6aca5d7e, "Notes": None, "LayoutChildren": [$$289457f8-a4f0-4fba-9d54-6038002ecf4d, $$c31ecf82-dd83-499c-beff-1c202bc9a690], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:FLU" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">FLU</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent", "Components": [$$1de56f2c-e1c8-4c2d-b49a-77160617ffe1, $$e14faf36-0176-4720-86ab-1c2b5a5ef5c5], "ComponentGroups": [[$$1de56f2c-e1c8-4c2d-b49a-77160617ffe1, $$e14faf36-0176-4720-86ab-1c2b5a5ef5c5]], "SystemVisible": True, "RequiredComponents": [$$1de56f2c-e1c8-4c2d-b49a-77160617ffe1, $$e14faf36-0176-4720-86ab-1c2b5a5ef5c5], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsTypeDisplayString": "Fluids", "VOLATILE:SystemName": "FLU"}, "SystemType": "FLUENT", "HeaderText": "Fluent", "SystemTypeAbbreviation": "FLU", "UniqueSystemDirectoryName": "FLU", "Physics": ["Fluids"], "AnalysisType": None, "SystemHelpId": "wb2sb_fluentapp", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$32503d00-0709-4096-8477-3eb2930ff48c, "Notes": None, "LayoutChildren": [], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:CFX" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">CFX</object-name>
+        <member-data valType="String">{"DisplayText": "CFX", "Components": [$$b1540916-4f20-429e-b389-50bd810040a0, $$81df370e-b60e-4276-9463-1fd4e8c32579, $$56b4d8e3-030e-4c0c-9145-d72c037d8384], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Fluids", "AnalysisType": None, "SolverType": "CFX", "PhysicsTypeDisplayString": "Fluids", "SystemName": "CFX", "VOLATILE:SystemName": "CFX"}, "SystemType": "CFX", "HeaderText": "CFX", "SystemTypeAbbreviation": "CFX", "UniqueSystemDirectoryName": "CFX", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_cfxapp", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$98b4b815-91b1-4607-95f1-b15b9cd31be1, "Notes": None, "LayoutChildren": [], "LayoutIndex": 0}</member-data>
       </Object>
       <Object Name="/Schematic/SchematicSettings:Schematic Settings" Version="1.0">
         <class-type valType="String">SchematicSettings</class-type>
@@ -450,6 +546,37 @@ CommandName: SetEntityProperty(Entity=\"/Mesh 1/MeshProperties:MeshProperties\",
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Results 1</object-name>
         <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 1", "_overwrittenUpdatable": None, "Template": $$bc8194b7-1e60-4b70-983a-4f34af8c3b55, "InSystem": $$504eff9c-3fb4-43f6-b474-83a3593019dc, "MasterSources": {"Sources": [[{"DataType": "FluentSolution", "Component": $$826a4637-ffd2-47f7-913d-936365014a2d, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup 2" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup 2</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 2", "_overwrittenUpdatable": None, "Template": $$cfc48ccf-4ec0-4292-b0b9-b013c6389157, "InSystem": $$289457f8-a4f0-4fba-9d54-6038002ecf4d, "MasterSources": {"Sources": [[{"DataType": "SimulationGeneratedMesh", "Component": $$cbcc7f38-17b7-4c17-bfd5-0ae637dab2e2, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Imported Mesh" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Imported Mesh</object-name>
+        <member-data valType="String">{"DisplayText": "Imported Mesh", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Imported Mesh", "_overwrittenUpdatable": None, "Template": $$f563d327-b22d-479f-b9c9-e2b296ebad5e, "InSystem": $$eb3238ab-f0d9-4b47-8817-8bd45a666e4b, "MasterSources": {"Sources": [[{"DataType": "Geometry", "Component": $$cbcc7f38-17b7-4c17-bfd5-0ae637dab2e2, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution 2" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 2", "_overwrittenUpdatable": None, "Template": $$9af1632e-23ec-4025-865e-5f7e072b48a7, "InSystem": $$289457f8-a4f0-4fba-9d54-6038002ecf4d, "MasterSources": {"Sources": [[{"DataType": "FluentSetup", "Component": $$1de56f2c-e1c8-4c2d-b49a-77160617ffe1, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "FLUENT", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup 3" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup 3</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 3", "_overwrittenUpdatable": None, "Template": $$d5959b85-5db5-4ec2-8330-758f15275a8c, "InSystem": $$c31ecf82-dd83-499c-beff-1c202bc9a690, "MasterSources": {"Sources": [[{"DataType": "SimulationGeneratedMesh", "Component": $$cbcc7f38-17b7-4c17-bfd5-0ae637dab2e2, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution 3" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution 3</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 3", "_overwrittenUpdatable": None, "Template": $$f04eb549-b4ab-4ddf-b757-d86e2f71688d, "InSystem": $$c31ecf82-dd83-499c-beff-1c202bc9a690, "MasterSources": {"Sources": [[{"DataType": "CFXSetup", "Component": $$b1540916-4f20-429e-b389-50bd810040a0, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "CFX", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Results 2" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Results 2</object-name>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 2", "_overwrittenUpdatable": None, "Template": $$bc8194b7-1e60-4b70-983a-4f34af8c3b55, "InSystem": $$c31ecf82-dd83-499c-beff-1c202bc9a690, "MasterSources": {"Sources": [[{"DataType": "CFXSolution", "Component": $$81df370e-b60e-4276-9463-1fd4e8c32579, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
     </Container>
     <Container Name="ReportDataContainer" Version="1.0">

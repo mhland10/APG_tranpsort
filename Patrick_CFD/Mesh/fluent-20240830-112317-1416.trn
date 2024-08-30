@@ -1,0 +1,187 @@
+Auto-Transcript Start Time:  11:23:17, 30 Aug 2024 Central Daylight Time 
+Current Directory: "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Mesh"
+
+              Welcome to ANSYS Fluent 2024 R2
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 13 2024 11:21:01 EST  Build Id: 10192  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-1N5CMU3" (win64).
+
+----------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                           
+----------------------------------------------------------------------------------
+n3    DESKTOP-1N5CMU3  4/6  Windows-x64  29420  Intel(R) Core(TM) i5-9600KF      
+n2    DESKTOP-1N5CMU3  3/6  Windows-x64  1812   Intel(R) Core(TM) i5-9600KF      
+n1    DESKTOP-1N5CMU3  2/6  Windows-x64  1352   Intel(R) Core(TM) i5-9600KF      
+n0*   DESKTOP-1N5CMU3  1/6  Windows-x64  29448  Intel(R) Core(TM) i5-9600KF      
+host  DESKTOP-1N5CMU3       Windows-x64  28644  Intel(R) Core(TM) i5-9600KF      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\cleanup-fluent-DESKTOP-1N5CMU3-28644.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Preferences...")
+(cx-gui-do cx-activate-item "Preferences*PanelButtons*PushButton2(Cancel)")
+writing cad import logs to "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_1416\\cadImport1725035125.log"
+    loading data from 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/2D_inletsection.fmd' ...
+    processing 18 zones ...
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_1416\initial.pmdat
+Done
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+
+---------------- A local max size of 0.00032 was added to wall-tripbar
+
+---- Warning--- Disabling 'Project On Geometry', as its currently not supported with 'Enable Multi Threading'
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_1416\TaskObject7.pmdat
+Done
+Computing size field ...
+Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Successfully activated the size field with ID 1
+size field computation is done in 21 sec.
+writing size field ...
+
+done.
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 17 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      74   zone2d_inlet_section_geometry                fluid   659873      147   659726
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     0            0.5504412     659873
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  4.23 minutes
+
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/case2_2D_inletsection_2d.msh.h5" ...
+writing 1 node zones
+writing 7 face zones 
+writing 1 cell zones 
+done.
+---------------- A 2D mesh was written to C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/case2_2D_inletsection_2d.msh.h5
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-toggle-button2 "Frame(iUserFrame)*CheckButton1(Write Binary Files)" #f)
+(cx-gui-do cx-activate-item "Frame(iUserFrame)*CheckButton1(Write Binary Files)")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "case2.msh.gz") "Legacy Compressed Mesh Files (*.msh.gz )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "| gzip -2cfv > C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2.msh.gz"...
+Writing temporary file C:\\Users\\mtthl\\AppData\\Local\\Temp\\flntgz-286442 ...
+Done.
+
+Copying the required intermediate mesh files into C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\case2_workflow_files
+Done.
+    saving data to 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2_workflow_files\\case2.fmd' ...
+    done.
+Reading C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_1416\TaskObject7.pmdat
+reading mesh C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Geometry\\FM_DESKTOP-1N5CMU3_1416\\TaskObject7.pmdat ...
+done.
+Reading projection method (1) from file was successful!
+generating pointers...done.
+extracting boundary entities...
+ 32 boundary nodes.
+ 6 boundary faces.
+ 1 boundary face zones.
+done.
+reading size field...
+Successfully activated the size field with ID 1
+ Read 1920554 vertices
+(cx-use-window-id 51)
+zone not found.
+Deleting controls...
+done
+
+---------------- A local max size of 0.00032 was added to wall-tripbar
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_1416\TaskObject7.pmdat
+Done
+Computing size field ...
+Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Successfully activated the size field with ID 2
+size field computation is done in 27 sec.
+writing size field ...
+
+done.
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 29 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      76   zone2d_inlet_section_geometry                fluid   664957      113   664844
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     0           0.38695495     664957
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  4.70 minutes
+
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/case3_2D_inletsection_2d.msh.h5" ...
+writing 1 node zones
+writing 7 face zones 
+writing 1 cell zones 
+done.
+---------------- A 2D mesh was written to C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/case3_2D_inletsection_2d.msh.h5
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3.msh.gz") "Legacy Compressed Mesh Files (*.msh.gz )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "| gzip -2cfv > C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3.msh.gz"...
+Writing temporary file C:\\Users\\mtthl\\AppData\\Local\\Temp\\flntgz-286443 ...
+Done.
+
+Copying the required intermediate mesh files into C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\case3_workflow_files
+Done.
+    saving data to 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3_workflow_files\\case3.fmd' ...
+    done.
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "case3.msh.gz") "Legacy Compressed Mesh Files (*.msh.gz )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "| gzip -2cfv > C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3.msh.gz"...
+Writing temporary file C:\\Users\\mtthl\\AppData\\Local\\Temp\\flntgz-286444 ...
+Done.
+
+Copying the required intermediate mesh files into C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\case3_workflow_files
+Done.
+    saving data to 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case3_workflow_files\\case3.fmd' ...
+    done.

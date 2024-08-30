@@ -31,21 +31,21 @@ MaterialPointManager22p = Model13p.GetMaterialPointData()
 Part1p = Model13p.GetPart(1)
 
 params = Prime.GlobalSizingParams()
-params.min = 1.89e-05
+params.min = 0.000189
 params.max = 0.001
 params.growthRate = 1.2
 Model13p.SetGlobalSizingParams(params)
 
 type = Prime.SizingType_Curvature
-SizeControl30p = ControlData21p.CreateSizeControl(type)
+SizeControl29p = ControlData21p.CreateSizeControl(type)
 
-SizeControl30p.GetSizingType()
+SizeControl29p.GetSizingType()
 
 params = Prime.CurvatureSizingParams()
-params.min = 1.89e-05
+params.min = 0.000189
 params.max = 0.001
 params.growthRate = 1.2
-params.normalAngle = 18
+params.normalAngle = 9
 params.useCadCurvature = True
 params.clearCurvatureNoise = False
 params.aggressiveCurvatureNoise = False
@@ -54,7 +54,7 @@ params.noiseGradient = 5
 params.useTensorCurvature = False
 params.aspectRatioSkewed = 0.1
 params.aspectRatioDegenerated = 0.001
-SizeControl30p.SetCurvatureSizingParams(params)
+SizeControl29p.SetCurvatureSizingParams(params)
 
 scope = Prime.ScopeDefinition()
 scope.usePartIfNoLabelsOrZones = True
@@ -71,18 +71,18 @@ scope.partEdgeZonelets.Set([8 , 10 , 9 , 8 , 7 , 6 , 5 , 3 , 4])
 scope.partTopoFaces.Set([])
 scope.partTopoEdges.Set([])
 scope.partVolumes.Set([])
-SizeControl30p.SetScope(scope)
+SizeControl29p.SetScope(scope)
 
 type = Prime.SizingType_Curvature
-SizeControl31p = ControlData21p.CreateSizeControl(type)
+SizeControl30p = ControlData21p.CreateSizeControl(type)
 
-SizeControl31p.GetSizingType()
+SizeControl30p.GetSizingType()
 
 params = Prime.CurvatureSizingParams()
-params.min = 1.89e-05
+params.min = 0.000189
 params.max = 0.001
 params.growthRate = 1.2
-params.normalAngle = 18
+params.normalAngle = 9
 params.useCadCurvature = True
 params.clearCurvatureNoise = False
 params.aggressiveCurvatureNoise = False
@@ -91,7 +91,7 @@ params.noiseGradient = 5
 params.useTensorCurvature = False
 params.aspectRatioSkewed = 0.1
 params.aspectRatioDegenerated = 0.001
-SizeControl31p.SetCurvatureSizingParams(params)
+SizeControl30p.SetCurvatureSizingParams(params)
 
 scope = Prime.ScopeDefinition()
 scope.usePartIfNoLabelsOrZones = True
@@ -108,15 +108,15 @@ scope.partEdgeZonelets.Set([])
 scope.partTopoFaces.Set([])
 scope.partTopoEdges.Set([])
 scope.partVolumes.Set([])
-SizeControl31p.SetScope(scope)
+SizeControl30p.SetScope(scope)
 
 type = Prime.SizingType_Proximity
-SizeControl32p = ControlData21p.CreateSizeControl(type)
+SizeControl31p = ControlData21p.CreateSizeControl(type)
 
-SizeControl32p.GetSizingType()
+SizeControl31p.GetSizingType()
 
 params = Prime.ProximitySizingParams()
-params.min = 1.89e-05
+params.min = 0.000189
 params.max = 0.001
 params.growthRate = 1.2
 params.elementsPerGap = 5
@@ -124,7 +124,7 @@ params.ignoreSelfProximity = True
 params.ignoreOrientation = False
 params.sizingProximityType = Prime.SizingProximityType_FaceFace
 params.minRelativeGap = 0.2
-SizeControl32p.SetProximitySizingParams(params)
+SizeControl31p.SetProximitySizingParams(params)
 
 scope = Prime.ScopeDefinition()
 scope.usePartIfNoLabelsOrZones = True
@@ -141,13 +141,13 @@ scope.partEdgeZonelets.Set([8 , 10 , 9 , 8 , 7 , 6 , 5 , 3 , 4])
 scope.partTopoFaces.Set([])
 scope.partTopoEdges.Set([])
 scope.partVolumes.Set([])
-SizeControl32p.SetScope(scope)
+SizeControl31p.SetScope(scope)
 
 model = Prime.Model.GetByName("Model13")
-SizeField33p = PrimeSizeField.SizeField.New(model)
-SizeField33p.Register("SizeField33")
+SizeField32p = PrimeSizeField.SizeField.New(model)
+SizeField32p.Register("SizeField32")
 
-size_control_ids = [2 , 3 , 4 , 5]
+size_control_ids = [1 , 2 , 3 , 4]
 volumetric_sizefield_params = PrimeSizeField.VolumetricSizeFieldComputeParams()
 volumetric_sizefield_params.enableMultiThreading = True
 volumetric_sizefield_params.enablePeriodicity = False
@@ -155,20 +155,20 @@ volumetric_sizefield_params.periodicParams = PrimeSizeField.SFPeriodicParams()
 volumetric_sizefield_params.periodicParams.axis.Set([])
 volumetric_sizefield_params.periodicParams.angle = 0
 volumetric_sizefield_params.periodicParams.center.Set([])
-SizeField33p.ComputeVolumetric(size_control_ids, volumetric_sizefield_params)
+SizeField32p.ComputeVolumetric(size_control_ids, volumetric_sizefield_params)
 
-FileIO34p = PrimeIO.FileIO.New(Prime.Model.GetByName("Model13"))
-FileIO34p.Register("FileIO34")
+FileIO33p = PrimeIO.FileIO.New(Prime.Model.GetByName("Model13"))
+FileIO33p.Register("FileIO33")
 
-file_name = "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_13020\2D_inletsection.sf"
-FileIO34p.ExportFluentMeshingSizeField(file_name)
+file_name = "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_1416\2D_inletsection.sf"
+FileIO33p.ExportFluentMeshingSizeField(file_name)
 
 model = Prime.Model.GetByName("Model13")
 part_id = 2
-Surfer35p = PrimeSurfer.Surfer.New(model, part_id)
-Surfer35p.Register("Surfer35")
+Surfer34p = PrimeSurfer.Surfer.New(model, part_id)
+Surfer34p.Register("Surfer34")
 
-Surfer35p.InitializeSurferParams()
+Surfer34p.InitializeSurferParams()
 
 topo_faces = [2]
 params = PrimeSurfer.SurferParams()
@@ -179,7 +179,7 @@ params.sizeFieldType = PrimeSurfer.SizeFieldType_Volumetric
 params.directionFieldType = PrimeSurfer.DirectionFieldType_Unknown
 params.nRetriesOnFailed = 1
 params.improveFailed = True
-params.minSize = 1.89e-05
+params.minSize = 0.000189
 params.maxSize = 0.001
 params.growthRate = 1.2
 params.frontIntersectionTolerance = 0.2
@@ -233,13 +233,13 @@ params.validateSurferInput = False
 params.surferCheckFeatureLoss = False
 params.smoothSizeTransition = False
 params.advancedSurferSetup = PrimeSurfer.AdvancedSurferSetup_None
-params.projectOnGeometry = True
-params.enableMultiThreading = False
+params.projectOnGeometry = False
+params.enableMultiThreading = True
 params.memoryOptimizedMultiThreading = False
 params.alignTriEdgeMesh = True
-Surfer35p.MeshTopoFaces(topo_faces, params)
+Surfer34p.MeshTopoFaces(topo_faces, params)
 
-ShellBLControl36p = ControlData21p.CreateShellBLControl()
+ShellBLControl47p = ControlData21p.CreateShellBLControl()
 
 entities = Prime.ScopeDefinition()
 entities.usePartIfNoLabelsOrZones = True
@@ -252,11 +252,11 @@ entities.labelExpression.Set("*")
 entities.zoneExpression.Set("*")
 entities.parts.Set([2])
 entities.partFaceZonelets.Set([])
-entities.partEdgeZonelets.Set([5 , 53 , 52 , 51 , 50 , 49])
+entities.partEdgeZonelets.Set([6 , 49 , 52 , 51 , 50 , 53 , 55])
 entities.partTopoFaces.Set([])
 entities.partTopoEdges.Set([])
 entities.partVolumes.Set([])
-ShellBLControl36p.SetEdgeScope(entities)
+ShellBLControl47p.SetEdgeScope(entities)
 
 entities = Prime.ScopeDefinition()
 entities.usePartIfNoLabelsOrZones = True
@@ -268,19 +268,19 @@ entities.partExpression.Set("*")
 entities.labelExpression.Set("*")
 entities.zoneExpression.Set("*")
 entities.parts.Set([2])
-entities.partFaceZonelets.Set([1 , 93])
+entities.partFaceZonelets.Set([1 , 74])
 entities.partEdgeZonelets.Set([])
 entities.partTopoFaces.Set([])
 entities.partTopoEdges.Set([])
 entities.partVolumes.Set([])
-ShellBLControl36p.SetSurfaceScope(entities)
+ShellBLControl47p.SetSurfaceScope(entities)
 
-ShellBLControl36p.InitializeGrowthParams()
+ShellBLControl47p.InitializeGrowthParams()
 
 shellbl_control_growth_params = Prime.ShellBLControlGrowthParams()
 shellbl_control_growth_params.nLayers = 25
 shellbl_control_growth_params.offsetType = Prime.ShellBLOffsetType_Uniform
-shellbl_control_growth_params.growthRate = 1.200000
+shellbl_control_growth_params.growthRate = 1.100000
 shellbl_control_growth_params.gapFactor = 0.200000
 shellbl_control_growth_params.firstHeight = 0.000019
 shellbl_control_growth_params.maxHeight = 0.009600
@@ -292,70 +292,15 @@ shellbl_control_growth_params.maxProjectionAngle = 135.000000
 shellbl_control_growth_params.exposeSide = True
 shellbl_control_growth_params.maxOrthogonalAngleDevation = 60.000000
 shellbl_control_growth_params.nOrthogonalLayers = 3
-ShellBLControl36p.SetGrowthParams(shellbl_control_growth_params)
-
-ShellBLControl37p = ControlData21p.CreateShellBLControl()
-
-entities = Prime.ScopeDefinition()
-entities.usePartIfNoLabelsOrZones = True
-entities.entityType = Prime.ScopeEntity_EdgeZonelets
-entities.evaluationType = Prime.ScopeEvaluationType_IDs
-entities.expressionType = Prime.ScopeExpressionType_NamePattern
-entities.evaluationOption = Prime.ScopeEvaluationOptions_GeomAndMesh
-entities.partExpression.Set("*")
-entities.labelExpression.Set("*")
-entities.zoneExpression.Set("*")
-entities.parts.Set([2])
-entities.partFaceZonelets.Set([])
-entities.partEdgeZonelets.Set([1 , 55])
-entities.partTopoFaces.Set([])
-entities.partTopoEdges.Set([])
-entities.partVolumes.Set([])
-ShellBLControl37p.SetEdgeScope(entities)
-
-entities = Prime.ScopeDefinition()
-entities.usePartIfNoLabelsOrZones = True
-entities.entityType = Prime.ScopeEntity_FaceZonelets
-entities.evaluationType = Prime.ScopeEvaluationType_IDs
-entities.expressionType = Prime.ScopeExpressionType_NamePattern
-entities.evaluationOption = Prime.ScopeEvaluationOptions_GeomAndMesh
-entities.partExpression.Set("*")
-entities.labelExpression.Set("*")
-entities.zoneExpression.Set("*")
-entities.parts.Set([2])
-entities.partFaceZonelets.Set([1 , 93])
-entities.partEdgeZonelets.Set([])
-entities.partTopoFaces.Set([])
-entities.partTopoEdges.Set([])
-entities.partVolumes.Set([])
-ShellBLControl37p.SetSurfaceScope(entities)
-
-ShellBLControl37p.InitializeGrowthParams()
-
-shellbl_control_growth_params = Prime.ShellBLControlGrowthParams()
-shellbl_control_growth_params.nLayers = 10
-shellbl_control_growth_params.offsetType = Prime.ShellBLOffsetType_Uniform
-shellbl_control_growth_params.growthRate = 1.200000
-shellbl_control_growth_params.gapFactor = 0.200000
-shellbl_control_growth_params.firstHeight = 0.000019
-shellbl_control_growth_params.maxHeight = 0.009600
-shellbl_control_growth_params.firstAspectRatio = 5.000000
-shellbl_control_growth_params.lastAspectRatio = 2.500000
-shellbl_control_growth_params.minAspectRatio = 0.010000
-shellbl_control_growth_params.maxAspectRatio = 100.000000
-shellbl_control_growth_params.maxProjectionAngle = 135.000000
-shellbl_control_growth_params.exposeSide = True
-shellbl_control_growth_params.maxOrthogonalAngleDevation = 60.000000
-shellbl_control_growth_params.nOrthogonalLayers = 3
-ShellBLControl37p.SetGrowthParams(shellbl_control_growth_params)
+ShellBLControl47p.SetGrowthParams(shellbl_control_growth_params)
 
 model = Prime.Model.GetByName("Model13")
 part_id = 2
-Surfer38p = PrimeSurfer.Surfer.New(model, part_id)
-Surfer38p.Register("Surfer38")
+Surfer48p = PrimeSurfer.Surfer.New(model, part_id)
+Surfer48p.Register("Surfer48")
 
 part_id = 2
-shellbl_control_ids = [6 , 7]
+shellbl_control_ids = [5]
 shellbl_params = PrimeSurfer.ShellBLParams()
 shellbl_params.localRemeshTarget = True
 shellbl_params.localRemeshAdjacent = True
@@ -363,34 +308,34 @@ shellbl_params.remeshGrowthRate = 1.200000
 shellbl_params.refineStretchedQuads = True
 shellbl_params.splitQuads = False
 shellbl_params.maxFaceSkew = 0.900000
-shellbl_params.projectOnGeometry_Beta = True
+shellbl_params.projectOnGeometry_Beta = False
 shellbl_params.projectionMethod = PrimeSurfer.ShellBLProjectionMethod_Post
 shellbl_params.stairstepGradient = 1
 shellbl_params.enableMultiThreading = False
 shellbl_params.adjacentSideHeightFactor = 3.000000
 shellbl_params.maxFaceSkewnessForTri = 0.900000
 shellbl_params.minWidthBaseRatioForQuad = 0.200000
-Surfer38p.CreateShellBLUsingControls(part_id, shellbl_control_ids, shellbl_params)
+Surfer48p.CreateShellBLUsingControls(part_id, shellbl_control_ids, shellbl_params)
 
 model = Prime.Model.GetByName("Model13")
-SurfaceSearch39p = PrimeSurfaceTools.SurfaceSearch.New(model)
-SurfaceSearch39p.Register("SurfaceSearch39")
+SurfaceSearch49p = PrimeSurfaceTools.SurfaceSearch.New(model)
+SurfaceSearch49p.Register("SurfaceSearch49")
 
 part_id = 2
-face_zonelets = [93]
+face_zonelets = [74]
 register_id = 28
 params = PrimeSurfaceTools.SearchByQualityParams()
 params.qualityLimit = 0.000000
 params.faceQualityMeasure = PrimeSurfaceTools.FaceQualityMeasure_Skewness
 params.generateTraversalClusters = False
-SurfaceSearch39p.SearchZoneletsByQuality(part_id, face_zonelets, register_id, params)
+SurfaceSearch49p.SearchZoneletsByQuality(part_id, face_zonelets, register_id, params)
 
 model = Prime.Model.GetByName("Model13")
 part_id = 2
-Surfer40p = PrimeSurfer.Surfer.New(model, part_id)
-Surfer40p.Register("Surfer40")
+Surfer50p = PrimeSurfer.Surfer.New(model, part_id)
+Surfer50p.Register("Surfer50")
 
-Surfer40p.InitializeLocalSurferParams()
+Surfer50p.InitializeLocalSurferParams()
 
 topo_faces = [2]
 register_id = 28
@@ -399,7 +344,7 @@ local_surfer_params.minAngle = 40.000000
 local_surfer_params.maxAngle = 179.500000
 local_surfer_params.cornerAngle = 20.000000
 local_surfer_params.sizeFieldType = PrimeSurfer.SizeFieldType_Volumetric
-local_surfer_params.minSize = 0.000004
+local_surfer_params.minSize = 0.000019
 local_surfer_params.maxSize = 0.001000
 local_surfer_params.growthRate = 1.200000
 local_surfer_params.constantSize = 0.001000
@@ -412,7 +357,7 @@ local_surfer_params.nSmoothingIterations = 5
 local_surfer_params.nSwappingIterations = 1
 local_surfer_params.smoothSizeTransition = True
 local_surfer_params.projectOnGeometry = False
-Surfer40p.MeshTopoFacesLocally(topo_faces, register_id, local_surfer_params)
+Surfer50p.MeshTopoFacesLocally(topo_faces, register_id, local_surfer_params)
 
 params = Prime.DeleteTopoEntitiesParams()
 params.deleteGeomZonelets = False

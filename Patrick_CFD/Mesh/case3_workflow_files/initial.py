@@ -37,13 +37,13 @@ params.growthRate = 1.2
 Model13p.SetGlobalSizingParams(params)
 
 params = Prime.GlobalSizingParams()
-params.min = 1.89e-05
+params.min = 0.000189
 params.max = 0.001
 params.growthRate = 1.2
 Model13p.SetGlobalSizingParams(params)
 
 params = Prime.GlobalSizingParams()
-params.min = 1.89e-05
+params.min = 0.000189
 params.max = 0.001
 params.growthRate = 1.2
 Model13p.SetGlobalSizingParams(params)
@@ -55,7 +55,7 @@ SizeControl27p.GetSizingType()
 
 params = Prime.SoftSizingParams()
 params.max = 0.00032
-params.growthRate = 1.2
+params.growthRate = 1.1
 SizeControl27p.SetSoftSizingParams(params)
 
 scope = Prime.ScopeDefinition()

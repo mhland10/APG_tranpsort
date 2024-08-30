@@ -1,0 +1,102 @@
+Auto-Transcript Start Time:  10:34:48, 30 Aug 2024 Central Daylight Time 
+Current Directory: "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Mesh"
+
+              Welcome to ANSYS Fluent 2024 R2
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 13 2024 11:21:01 EST  Build Id: 10192  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-1N5CMU3" (win64).
+
+----------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                           
+----------------------------------------------------------------------------------
+n3    DESKTOP-1N5CMU3  4/6  Windows-x64  12928  Intel(R) Core(TM) i5-9600KF      
+n2    DESKTOP-1N5CMU3  3/6  Windows-x64  31380  Intel(R) Core(TM) i5-9600KF      
+n1    DESKTOP-1N5CMU3  2/6  Windows-x64  27840  Intel(R) Core(TM) i5-9600KF      
+n0*   DESKTOP-1N5CMU3  1/6  Windows-x64  12592  Intel(R) Core(TM) i5-9600KF      
+host  DESKTOP-1N5CMU3       Windows-x64  29472  Intel(R) Core(TM) i5-9600KF      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\cleanup-fluent-DESKTOP-1N5CMU3-29472.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+writing cad import logs to "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_14120\\cadImport1725032120.log"
+    loading data from 'C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/2D_inletsection.fmd' ...
+    processing 18 zones ...
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_14120\initial.pmdat
+Done
+
+---------------- Import consisting of 1 meshing part(s), complete. 
+ 
+
+---------------- A local max size of 0.00032 was added to wall-tripbar
+Deleting controls...
+done
+
+---------------- A local max size of 0.00032 was added to wall-tripbar
+
+---- Warning--- Disabling 'Project On Geometry', as its currently not supported with 'Enable Multi Threading'
+Writing C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry\FM_DESKTOP-1N5CMU3_14120\TaskObject7.pmdat
+Done
+Computing size field ...
+Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Specified entity type is not supported yet.Successfully activated the size field with ID 1
+size field computation is done in 26 sec.
+writing size field ...
+
+done.
+Generating surface mesh on 1 faces of object2d_inlet_section_geometry part ...
+surface mesh done in 28 sec.
+
+---------------- A surface mesh was added to 2D_inletsection
+Evaluation type not supported yet.
+---------------- Boundary Layers were added to 6 boundaries in 1 regions.
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+      74   zone2d_inlet_section_geometry                fluid   664866      103   664763
+
+------------------------- --------------------- -------------------- ----------
+                     name cells (quality < 0.05)      minimum quality cell count
+------------------------- --------------------- -------------------- ----------
+zone2d_inlet_section_geometry                     0           0.55122045     664866
+
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 2D Meshing completed for 2D_inletsection in  4.70 minutes
+
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Mesh*Draw All")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  11:18:31, 30 Aug 2024 Central Daylight Time 
+Total Transcript Time: 43 Minute 43 Second.

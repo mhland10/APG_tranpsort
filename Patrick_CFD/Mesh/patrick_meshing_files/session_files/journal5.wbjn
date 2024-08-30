@@ -1,0 +1,48 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(TemplateName="Mesh")
+system1 = GetSystem(Name="FFF 1")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometryProperties1 = geometry1.GetGeometryProperties()
+geometryProperties1.GeometryImportAnalysisType = "AnalysisType_2D"
+mesh1 = system2.GetContainer(ComponentName="Mesh")
+mesh1.Import(
+    FilePath="C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2.msh.gz",
+    MeshType="FLUENT")
+template2 = GetTemplate(TemplateName="FLUENT")
+importedMeshComponent1 = system2.GetComponent(Name="Imported Mesh")
+componentTemplate1 = GetComponentTemplate(Name="FluentSetupCellTemplate")
+system3 = template2.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=importedMeshComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    RelativeTo=system2)
+setupComponent1 = system3.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+setup1 = system3.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(Precision="Double", EnvPath={}, RunParallel=True, NumberOfProcessorsMeshing=4, NumberOfProcessors=4))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command='/file/set-tui-version "24.2"')
+template3 = GetTemplate(TemplateName="CFX")
+componentTemplate2 = GetComponentTemplate(Name="CFXPhysicsTemplate")
+system4 = template3.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=importedMeshComponent1, TransferName=None, ToComponentTemplate=componentTemplate2)],
+    RelativeTo=system2)
+setup2 = system4.GetContainer(ComponentName="Setup")
+setup2.Edit()
+setup2.Exit()
+template4 = GetTemplate(TemplateName="Mechanical APDL")
+componentTemplate3 = GetComponentTemplate(Name="ANSYSSetupCellTemplate")
+system5 = template4.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=importedMeshComponent1, TransferName=None, ToComponentTemplate=componentTemplate3)],
+    RelativeTo=system2)
+meshProperties1 = mesh1.GetMeshProperties()
+meshProperties1.saveMeshFileInSeparateFile = True
+system5 = template4.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=importedMeshComponent1, TransferName=None, ToComponentTemplate=componentTemplate3)],
+    RelativeTo=system2)
+Save(Overwrite=True)

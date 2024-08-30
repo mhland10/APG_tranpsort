@@ -1,0 +1,54 @@
+Auto-Transcript Start Time:  11:22:17, 30 Aug 2024 Central Daylight Time 
+Current Directory: "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Mesh"
+
+              Welcome to ANSYS Fluent 2024 R2
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 13 2024 11:21:01 EST  Build Id: 10192  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-1N5CMU3" (win64).
+
+----------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                           
+----------------------------------------------------------------------------------
+n3    DESKTOP-1N5CMU3  4/6  Windows-x64  20436  Intel(R) Core(TM) i5-9600KF      
+n2    DESKTOP-1N5CMU3  3/6  Windows-x64  19156  Intel(R) Core(TM) i5-9600KF      
+n1    DESKTOP-1N5CMU3  2/6  Windows-x64  27148  Intel(R) Core(TM) i5-9600KF      
+n0*   DESKTOP-1N5CMU3  1/6  Windows-x64  24108  Intel(R) Core(TM) i5-9600KF      
+host  DESKTOP-1N5CMU3       Windows-x64  33332  Intel(R) Core(TM) i5-9600KF      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Mesh\\cleanup-fluent-DESKTOP-1N5CMU3-33332.bat
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "case2.msh.h5") "All Mesh Files (*.msh* *.MSH* )")
+Fast-loading "A:\Ansys\ANSYS Inc\ANSYS Student\v242\fluent\fluent24.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Error: File has wrong dimensions (2).
+Error Object: "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2.msh.h5"
+(cx-gui-do cx-activate-item "Error*OK")
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  11:22:55, 30 Aug 2024 Central Daylight Time 
+Total Transcript Time: 0 Minute 38 Second.

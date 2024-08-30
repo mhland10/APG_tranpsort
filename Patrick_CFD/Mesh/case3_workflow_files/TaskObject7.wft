@@ -6,7 +6,10 @@
                 "Arguments": {
                     "FileName": "C:\/Users\/mtthl\/OneDrive\/Documents\/Education\/Masters Thesis\/git\/APG_tranpsort\/Patrick_CFD\/Geometry\/2D_inletsection.agdb",
                     "LengthUnit": "m",
-                    "NumParts": "1"
+                    "NumParts": "1",
+                    "Refaceting": {
+                        "Refacet": "false"
+                    }
                 },
                 "CheckPoint": "default-off",
                 "CommandName": "LoadCADGeometry",
@@ -54,8 +57,11 @@
             },
             "TaskObject:TaskObject4": {
                 "Arguments": {
+                    "CellsPerGap": "5",
+                    "CurvatureNormalAngle": "9",
+                    "EnableMultiThreading": "true",
                     "MaxSize": "0.001",
-                    "MinSize": "1.0699999999999999e-05"
+                    "MinSize": "0.000107"
                 },
                 "CheckPoint": "default-off",
                 "CommandName": "DefineGlobalSizing",
@@ -92,8 +98,7 @@
                 "ObjectPath": "",
                 "State": "Out-of-date",
                 "TaskList": [
-                    "TaskObject10",
-                    "TaskObject11"
+                    "TaskObject10"
                 ],
                 "TaskType": "Compound",
                 "Warnings": "__________None",
@@ -103,7 +108,14 @@
                 "Arguments": {
                     "EnableMultiThreading": "true",
                     "GenerateQuads": "true",
-                    "ProjectOnGeometry": "false"
+                    "Prism2DPreferences": {
+                        "RefineStretchedQuads": "yes",
+                        "ShowPrism2DPreferences": "true"
+                    },
+                    "ProjectOnGeometry": "false",
+                    "Surface2DPreferences": {
+                        "ShowAdvancedOptions": "true"
+                    }
                 },
                 "CheckPoint": "default-on",
                 "CommandName": "GenerateInitialSurfaceMesh",
@@ -116,7 +128,7 @@
             },
             "TaskObject:TaskObject8": {
                 "Arguments": {
-                    "FileName": "C:\/Users\/mtthl\/OneDrive\/Documents\/Education\/Masters Thesis\/git\/APG_tranpsort\/Patrick_CFD\/Mesh\/case2.msh.h5"
+                    "FileName": "C:\/Users\/mtthl\/OneDrive\/Documents\/Education\/Masters Thesis\/git\/APG_tranpsort\/Patrick_CFD\/Geometry\/case2_2D_inletsection_2d.msh.h5"
                 },
                 "CheckPoint": "default-off",
                 "CommandName": "Write2dMesh",
@@ -134,7 +146,7 @@
                     "BOIControlName": "edgesize_1",
                     "BOICurvatureNormalAngle": "18",
                     "BOIExecution": "Edge Size",
-                    "BOIGrowthRate": "1.2",
+                    "BOIGrowthRate": "1.1000000000000001",
                     "BOISize": "0.00032000000000000003",
                     "BOIZoneorLabel": "label",
                     "CompleteEdgeLabelList": [
@@ -159,15 +171,10 @@
                 "Arguments": {
                     "AddChild": "yes",
                     "BLControlName": "uniform_1",
-                    "EdgeLabelList": [
-                        "wall-developing",
-                        "wall-leading",
-                        "wall-tripbar"
-                    ],
-                    "FirstLayerHeight": "1.0699999999999999e-06",
-                    "GrowOn": "selected-labels",
-                    "MaxLayerHeight": "0.012",
-                    "NumberOfLayers": "25"
+                    "FirstLayerHeight": "1.0699999999999999e-05",
+                    "MaxLayerHeight": "0.0095999999999999992",
+                    "NumberOfLayers": "25",
+                    "Rate": "1.1000000000000001"
                 },
                 "CheckPoint": "default-off",
                 "CommandName": "Add2DBoundaryLayers",
@@ -178,25 +185,8 @@
                 "Warnings": "__________None",
                 "_name_": "uniform_1"
             },
-            "TaskObject:TaskObject11": {
-                "Arguments": {
-                    "AddChild": "yes",
-                    "BLControlName": "uniform_2",
-                    "FirstLayerHeight": "1.0699999999999999e-06",
-                    "MaxLayerHeight": "0.0095999999999999992",
-                    "NumberOfLayers": "10"
-                },
-                "CheckPoint": "default-off",
-                "CommandName": "Add2DBoundaryLayers",
-                "Errors": "__________None",
-                "ObjectPath": "",
-                "State": "Out-of-date",
-                "TaskType": "Compound Child",
-                "Warnings": "__________None",
-                "_name_": "uniform_2"
-            },
             "Workflow": {
-                "CurrentTask": "TaskObject11",
+                "CurrentTask": "TaskObject10",
                 "TaskList": [
                     "TaskObject1",
                     "TaskObject2",
