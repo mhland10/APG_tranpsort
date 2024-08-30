@@ -1,0 +1,101 @@
+Auto-Transcript Start Time:  20:56:36, 29 Aug 2024 Central Daylight Time 
+Current Directory: "C:\Users\mtthl\OneDrive\Documents\Education\Masters Thesis\git\APG_tranpsort\Patrick_CFD\Geometry"
+
+              Welcome to ANSYS Fluent 2024 R2
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 13 2024 11:28:30 EST  Build Id: 10192  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-1N5CMU3" (win64).
+
+----------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                           
+----------------------------------------------------------------------------------
+n3    DESKTOP-1N5CMU3  4/6  Windows-x64  640    Intel(R) Core(TM) i5-9600KF      
+n2    DESKTOP-1N5CMU3  3/6  Windows-x64  9456   Intel(R) Core(TM) i5-9600KF      
+n1    DESKTOP-1N5CMU3  2/6  Windows-x64  11480  Intel(R) Core(TM) i5-9600KF      
+n0*   DESKTOP-1N5CMU3  1/6  Windows-x64  23728  Intel(R) Core(TM) i5-9600KF      
+host  DESKTOP-1N5CMU3       Windows-x64  33600  Intel(R) Core(TM) i5-9600KF      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\mtthl\\OneDrive\\Documents\\Education\\Masters Thesis\\git\\APG_tranpsort\\Patrick_CFD\\Geometry\\cleanup-fluent-DESKTOP-1N5CMU3-33600.bat
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "A:\Ansys\ANSYS Inc\ANSYS Student\v242\fluent\fluent24.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+DESKTOP-1N5CMU3 is already loaded (62.5041).                       Process affinity not being set.
+
+Reading from DESKTOP-1N5CMU3:"C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Geometry/case2_2D_inletsection_2d.msh.h5" in NODE0 mode ...
+  Reading mesh ...
+      609018 cells,     1 cell zone  ...
+         609018 mixed cells,  zone id: 93
+     1220738 faces,     7 face zones ...
+            239 2D wall faces,  zone id: 48
+             67 2D wall faces,  zone id: 49
+             60 2D wall faces,  zone id: 50
+           2472 2D wall faces,  zone id: 53
+            239 2D wall faces,  zone id: 54
+           2540 2D wall faces,  zone id: 55
+        1215121 2D interior faces,  zone id: 70789
+      611721 nodes,     1 node zone  ...
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts....,
+		faces....,
+		nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 152606/314 = 486.006
+     materials,
+     interface,
+     domains,
+     zones,
+	zone2d_inlet_section_geometry
+	interior:zone2d_inlet_section_geometry
+	inlet
+	wall-leading
+	wall-tripbar
+	wall-developing
+	outlet
+	wall-opposing
+     parallel,
+Done.
+
+> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Boundary Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2_2D_inletsection_2d_boundary.msh") "Boundary Mesh Files (*.msh)")
+Writing "C:/Users/mtthl/OneDrive/Documents/Education/Masters Thesis/git/APG_tranpsort/Patrick_CFD/Mesh/case2_2D_inletsection_2d_boundary.msh"...
+     239 2D mass-flow-inlet faces, zone 48.
+      67 2D wall faces, zone 49.
+      60 2D wall faces, zone 50.
+    2472 2D wall faces, zone 53.
+     239 2D pressure-outlet faces, zone 54.
+    2540 2D wall faces, zone 55.
+  611721 nodes.
+Done.
+
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  21:04:49, 29 Aug 2024 Central Daylight Time 
+Total Transcript Time: 8 Minute 13 Second.

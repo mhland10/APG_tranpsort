@@ -75,5 +75,47 @@ scope.partTopoEdges.Set([])
 scope.partVolumes.Set([])
 SizeControl27p.SetScope(scope)
 
+control_ids = [1]
+ControlData21p.DeleteControls(control_ids)
+
+params = Prime.GlobalSizingParams()
+params.min = 1.89e-05
+params.max = 0.001
+params.growthRate = 1.2
+Model13p.SetGlobalSizingParams(params)
+
+params = Prime.GlobalSizingParams()
+params.min = 1.89e-05
+params.max = 0.001
+params.growthRate = 1.2
+Model13p.SetGlobalSizingParams(params)
+
+type = Prime.SizingType_Soft
+SizeControl28p = ControlData21p.CreateSizeControl(type)
+
+SizeControl28p.GetSizingType()
+
+params = Prime.SoftSizingParams()
+params.max = 0.00032
+params.growthRate = 1.2
+SizeControl28p.SetSoftSizingParams(params)
+
+scope = Prime.ScopeDefinition()
+scope.usePartIfNoLabelsOrZones = True
+scope.entityType = Prime.ScopeEntity_EdgeZonelets
+scope.evaluationType = Prime.ScopeEvaluationType_Labels
+scope.expressionType = Prime.ScopeExpressionType_NamePattern
+scope.evaluationOption = Prime.ScopeEvaluationOptions_GeomAndMesh
+scope.partExpression.Set("*")
+scope.labelExpression.Set("wall-tripbar")
+scope.zoneExpression.Set("*")
+scope.parts.Set([])
+scope.partFaceZonelets.Set([])
+scope.partEdgeZonelets.Set([])
+scope.partTopoFaces.Set([])
+scope.partTopoEdges.Set([])
+scope.partVolumes.Set([])
+SizeControl28p.SetScope(scope)
+
 graphics = PrimeApp.Graphics.Get()
 graphics.UseModel(model)
